@@ -434,4 +434,4 @@ class OpenAIHelper:
                     logging.warning(f'Error while summarising chat history: {str(e)}. Popping elements instead...')
                     self.conversations[chat_id] = self.conversations[chat_id][-self.config['max_history_size']:]
 
-            message = {'role':'user', 'content':content}
+            message = ('role':'user', 'content':content)
