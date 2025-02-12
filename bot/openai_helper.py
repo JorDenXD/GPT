@@ -15,7 +15,7 @@ from PIL import Image
 from tenacity import retry, stop_after_attempt, wait_fixed, retry_if_exception_type
 
 from utils import is_direct_result, encode_image, decode_image
-from plugin_manager import PluginManager
+from .plugin_manager import PluginManager
 
 # Models can be found here: https://platform.openai.com/docs/models/overview
 # Models gpt-3.5-turbo-0613 and  gpt-3.5-turbo-16k-0613 will be deprecated on June 13, 2024
