@@ -435,5 +435,3 @@ class OpenAIHelper:
                     self.conversations[chat_id] = self.conversations[chat_id][-self.config['max_history_size']:]
 
             message = {'role':'user', 'content':content}
-
-  
